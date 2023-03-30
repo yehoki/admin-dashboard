@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 1px solid;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100dvh;
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.header-top {
+    display: flex;
+}
+
+.searchbar {
+    flex: 1;
+}
+
+.profile {
+    display: flex;
+}
+
+.header-bottom {
+    display: flex;
+}
+
+.greeting {
+    flex: 1;
+}
+
+.buttons {
+
+}
+
+
+.sidebar {
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+}
+
+.sidebar-background {
+    /* background-color: #4b5563 ; */
+}
+
+.dashboard {
+
+}
+
+.menu {
+
+}
+
+.settings {
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 3fr 2fr;
+    gap: 15px;
+}
+
+.projects{
+    grid-row: 1 / span 2;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.project {
+    height: 200px;
+}
+
+.announcements {
+
+}
+
+.trending {
+
+}
